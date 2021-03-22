@@ -1,0 +1,18 @@
+<div class="container card mt-4 pb-4">
+    <div class="row">
+        <div class="col-sm-8 mt-4">
+            <h1>{{practice.titul}}</h1>
+        </div>
+        <div class="col-sm-4 mt-4 ">
+            <p class="text-right">{{practice.data}}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 mt-4">
+            <p class="tagColor">{{practice.tag}}</p>
+        </div>
+    </div>
+    <p>{{practice.contingut}}</p>
+
+    <button type="button" class="btn btn-primary" [routerLink]="['/show']">home</button>
+</div>

@@ -1,0 +1,21 @@
+<div class="p-4 m-2 ">
+    <div class="mb-3 row">
+        <div class="col-sm">
+            <label for="titul" class="form-label col-sm">Titul</label>
+            <input type="text" class="form-control col-sm" id="titul" [(ngModel)]="practice.titul">
+        </div>
+        <div class="col-sm">
+            <label for="date" class="form-label col-sm">Fecha</label>
+            <input type="date" class="form-control " id="date" [(ngModel)]="practice.data">
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="tag" class="form-label">Tag</label>
+        <input type="text" class="form-control" [(ngModel)]="practice.tag" id="tag">
+    </div>
+    <div class="mb-3">
+        <label for="contingut" class="form-label">Contingut</label>
+        <textarea type="text" class="form-control text-break" [(ngModel)]="practice.contingut" id="contingut"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="update(practiceId)">Submit</button>
+</div>
