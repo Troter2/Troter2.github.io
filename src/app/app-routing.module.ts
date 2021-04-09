@@ -6,12 +6,13 @@ import { ShowPracticesComponent } from './pages/show-practices/show-practices.co
 import { UpdateComponent } from './pages/update/update.component';
 import { AngularFireAuthGuard, redirectLoggedInTo, redirectUnauthorizedTo } from '@angular/fire/auth-guard';
 import { CurriculumComponent } from './pages/curriculum/curriculum.component';
+import { HomeComponent } from './pages/home/home.component';
 
 const redirectLoggedInToShow = () => redirectLoggedInTo(['show']);
 const redirectUnauthorizedToShow = () => redirectUnauthorizedTo(['show']);
 
 const routes: Routes = [
-  { path: '', redirectTo: '/show', pathMatch: 'full' },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
 
   {
     path: 'update', children: [
@@ -26,6 +27,7 @@ const routes: Routes = [
     ]
   },
   {path: 'add', component: AddComponent, canActivate: [AngularFireAuthGuard], data: {authGuardPipe: redirectUnauthorizedToShow}},
+  {path: 'home', component: HomeComponent},
   {path: 'cv', component: CurriculumComponent},
 ];
 

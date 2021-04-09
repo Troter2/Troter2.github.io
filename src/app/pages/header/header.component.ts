@@ -33,7 +33,7 @@ export class HeaderComponent implements OnInit {
             if (originalCorreos.length >= 1) {
               this.error = false;
               this.allowed = false;
-              this.router.navigate(['/show']);
+              this.router.navigate(['/home']);
             } else {
               this.error = true;
               this.allowed = true;
@@ -50,7 +50,7 @@ export class HeaderComponent implements OnInit {
   }
   logout() {
     this.fireauth.logout();
-    this.router.navigate(['/show']);
+    this.router.navigate(['/home']);
     console.log("FF")
   }
 }

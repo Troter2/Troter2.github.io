@@ -13,6 +13,7 @@ import { UpdateComponent } from './pages/update/update.component';
 import { CurriculumComponent } from './pages/curriculum/curriculum.component';
 import { HeaderComponent } from './pages/header/header.component';
 import { ScullyLibModule } from '@scullyio/ng-lib';
+import { FooterComponent } from './pages/footer/footer.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
     UpdateComponent,
     CurriculumComponent,
     HeaderComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
